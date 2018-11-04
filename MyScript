@@ -1,0 +1,45 @@
+echo "Let me show you some of the basic commands I've learnt."
+echo "Before I begin, let me clear your terminal using the clear command."
+
+clear
+
+echo "By the way, I am talking to you using the echo command."
+echo "Let's see what directory you are currently in."
+echo
+
+echo "Well you are in..."
+pwd
+echo "...this directory"
+echo
+echo "This was done using the pwd command."
+echo
+echo "Now let's move to the root directory."
+echo
+echo "This can be acheived by the cd / command..In Linux / means the root directory"
+
+cd /
+
+echo "Let's see what directory you are in now."
+echo "You are in..."
+
+pwd
+
+echo
+echo "So are you happy to be in the root directory?"
+echo "Let's see what files and directories you've got here."
+echo
+
+ls
+
+echo
+echo "This was done using the ls command."
+echo "Not happy with this? Do you want a detailed list?"
+echo
+
+ls -l
+
+echo
+echo "Now that was done using the ls -l command."
+echo
+echo "In this script you have learnt the clear, echo, pwd, cd and ls commands."
+echo "See you again in my next script."
