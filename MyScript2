@@ -1,0 +1,49 @@
+clear
+echo "Hey there!! welcome back..let's learn some more commands"
+echo
+echo "Instead of navigating to a directory and then listing its contents..."
+echo "you can list the contents from your current working directory"
+echo
+ls /home
+echo
+echo "this was done using ls /path"
+echo "In this example, I've used ls/home"
+echo
+echo "you can also move directly to the home using cd/home or cd ~"
+echo "~ is the shortcut to your home folder"
+echo
+cd ~
+echo "let's see if you are in your home directory.."
+echo "now how did we do that in the first script"
+pwd
+echo
+echo "That's right... you can check using the pwd command"
+echo
+echo "to move up a folder, use the cd .. command"
+echo 
+echo "first let's go to the documents folder in your home"
+cd ~/Documents
+echo "now...where am I"
+pwd
+echo
+echo "lets move up again"
+cd ..
+echo "and where am I now"
+echo
+pwd
+echo
+echo "voila back again at the home directory"
+echo
+echo "to view the help on a command, use the man command"
+echo "for example, man ls"
+echo
+echo "to exit the help, press q"
+echo "I have not executed the man command here as I am not sure how to exit"
+echo
+echo "hmmm..I also need to check if there a way to add delays in my script"
+echo "let's create a file using the touch command now"
+echo
+touch YourNewFile
+echo "check if you can spot the 'YourNewFile' in your home directory using the ls command"
+echo
+echo "Bye! see ya later alligator"
