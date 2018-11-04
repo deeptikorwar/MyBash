@@ -15,7 +15,7 @@ echo "This was done using the pwd command."
 echo
 echo "Now let's move to the root directory."
 echo
-echo "This can be acheived by the cd / command..In Linux / means the root directory"
+echo "This can be done using the cd / command..In Linux / means the root directory"
 
 cd /
 
