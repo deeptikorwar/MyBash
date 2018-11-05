@@ -1,0 +1,24 @@
+echo "Welcome back!"
+echo "Ever wondered how I create these script files?"
+echo
+echo "Well...I do them using the nano command"
+echo
+echo "I suppose you can do the same using the vi command, but I haven't experimented that yet"
+echo
+echo "Try nano name_of_file on your terminal"
+echo
+echo "This creates the file name_of_file in your current working directory"
+echo
+echo "You can also nano filepath name_of_file to create a file in a particular directory"
+echo 
+echo "Note that if the file already exists, this commands lets you edit the file"
+echo
+echo "Try out the various options at the bottom of the nano GNU which help you with your file edits"
+echo
+echo "If you want spaces in your file name, use nano \"name of file\", if you don't use the double quotes, three files are created"
+echo "That's right! The files are name, of, and file"
+echo
+echo "Another important thing, you need to use the escape character \ before double quotes, else they are not outputted."
+echo
+echo "Happy nano editing"
+echo "Until then Asta la Vista"
