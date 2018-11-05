@@ -10,3 +10,8 @@ These commands directly correlate to the videos on learlinux.tv
 I have added these two files:
 MyScript 1 - contains commands from 01 video
 MyScript 2 - contains commands from 02, 03 and 04 videos
+
+I think you should describe how users should make use of this scripts
+download
+execute
+and run on Mac using the sh command
