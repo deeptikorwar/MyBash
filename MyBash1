@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#This script shows you how to use variables in bash scripts
+clear
+echo "Let's create some variables and use them"
+echo
+FNAME="Jason"
+LNAME="Bourne"
+
+echo "I love" $FNAME $LNAME "movies"
+echo
+echo "Here I have used two variables, FNAME and LNAME"
+echo "Do you think you want to say this 10 times?"
+echo
+echo "I wonder how it is done in bash scripts"
