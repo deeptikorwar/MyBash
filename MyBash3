@@ -1,0 +1,42 @@
+#!/bin/bash
+
+clear
+
+echo "Enter your name"
+read yname
+echo "Your name is $yname"
+echo
+
+echo "Press Y to continue and N to exit"
+read ack
+
+if [ $ack = "Y" ]; then
+#Input result of the command date to a variable so that you can echo it
+DDate=$(date)
+echo "Hello" $yname ". It is " $DDate 
+echo
+echo "Wondering how I got the date and the text on the same line??"
+echo "Press y to look at my script and n if you don't care"
+read ack
+
+if [ $ack = "y" ]; then
+clear
+echo "Hello curious being!! Here you go..."
+echo
+cat MyBash3
+echo
+echo "Now that's all of my script"
+echo "Do you like it?"
+else
+echo "See ya later"
+fi
+
+# else part of my first if block
+else
+
+echo "I understand you don't want to continue"
+fi
+
+#output error message to log file ask user to check log file if the output file$
+
+#echo "Really?? your name has special characters? What planet are you from?"
