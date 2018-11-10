@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "What do you like the most"
+
+echo "1 - Dark choclate"
+echo "2 - Brownie"
+echo "3 - Ice-cream"
+echo "4 - Cold coffee"
+
+read like;
+
+case $like in
+   1) echo "I suppose you like the Lindt 70% dark chocs";;
+   2) echo "I love hot brownie with vanilla ice-cream";;
+   3) echo "I love vanilla ice-cream with strawberry sauce and cream";;
+   4) echo "Mmm...coffee on the rocks!!!";;
+esac
