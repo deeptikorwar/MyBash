@@ -1,0 +1,37 @@
+clear
+echo "Let's try to run a command on each file within a directory"
+# Let's do it recursively later
+echo
+echo "Type the directory path you are after:"
+read dircmd
+echo
+sleep 0.5
+echo "You have chosen this path" $dircmd
+echo
+sleep 0.5
+echo "Now type the command you want to execute on each of these files:"
+echo "Please type cat for now as I can't think of others commands that will work"
+read yourcmd
+echo "You have chosen this command" $yourcmd
+#first find all the files in the chosen directory
+echo
+eval ls $dircmd > MyBash.log
+mycount="$(cat MyBash.log | wc -l)"
+echo "Your directory contains these many items" $mycount
+#let's start a loop
+echo
+
+while read name; do
+eval cd $dircmd
+
+if [ -f "$name" ]; then
+echo "Here are the contents of" $name
+echo "-------------------------------"
+eval $yourcmd $name
+echo
+echo "-------------------------------"
+echo "I finished executing" $yourcmd "on" $name
+echo
+fi
+
+done < MyBash.log
