@@ -1,11 +1,9 @@
 # MyBash
 My Bash scripting journey
 
-Hey there!! I am planning to create a script containing some of the Linux commands I have learnt. 
+Hey there!! I have created some scripts using the Linux commands I have learnt.
 
-Let's see how I go.
-
-These commands directly correlate to the videos on learlinux.tv
+You can learn these commands by watching the learnlinux.tv YouTube videos.
 
 I have added these two files:
 MyScript 1 - contains commands from 01 video
