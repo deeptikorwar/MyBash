@@ -1,0 +1,26 @@
+#!/bin/bash
+clear
+echo "Let's try out the concept of arrays in this script"
+echo "Type you favourite programming languages"
+echo "When you are done, type 'EOF'"
+prog_name=()
+count=0
+
+while read name;
+do
+
+if [ $name = "EOF" ];
+then
+break;
+else
+prog_name[$count]=$name
+count=$(( $count + 1 ))
+fi
+
+done
+
+echo "Looks like you have run out of fav languages"
+echo "Here's what you have entered:"
+echo ${prog_name[*]}
+
+echo "See ya later"

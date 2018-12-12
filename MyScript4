@@ -1,0 +1,25 @@
+#!/bin/bash
+clear
+echo "Let's learn about some special variables"
+echo
+echo $$
+echo "Now that shows you the PID of the current shell"
+echo
+echo $0
+echo "Hey!that's the name of your current script"
+echo
+echo "You have passed this argument $1"
+echo "Now..if you don't see anything outputted, that means you have not passed any arguments to this script"
+echo "Go back and pass an argument"
+echo
+echo "You have passed $# number of arguments to this script"
+echo
+echo "You have passed $* arguments to this script"
+echo
+echo "Let me show you what you passed"
+for TOKEN in $*
+do
+echo -----
+echo $TOKEN
+done
+echo -----

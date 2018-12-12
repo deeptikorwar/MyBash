@@ -1,0 +1,47 @@
+#!/bin/bash
+clear
+echo "Let's play with some command line arguments"
+echo
+sleep 0.5
+#start main loop
+if [ $# -eq 0 ]; then
+
+echo "Looks like you did not pass me any arguments"
+echo "Run me again, but with some args please..."
+
+else
+
+echo "You passed $# number of args"
+echo "These are the args you passed:"
+count=0
+
+for argu in $*
+do
+count=$(( $count + 1 ))
+echo $count. $argu
+done
+echo
+
+dollar="$"
+cmd="$dollar$count"
+# you need to convert everything to a string to pass it to the eval command
+eval echo "The last argument you passed is:" $cmd
+
+echo
+echo "Now from this list, type your favorite command"
+read input </dev/tty
+echo "So I take '$input' is your fav?"
+echo
+
+echo "Here are your not so fav commands" 
+for argu in $*
+do
+
+if [ $input != $argu ]; then
+echo $argu
+fi
+
+done
+
+#end main loop
+fi
