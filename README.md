@@ -1,4 +1,5 @@
 # MyBash
+Document all cmd files
 My Bash scripting journey
 
 Hey there!! I have created some scripts using the Linux commands I have learnt.
