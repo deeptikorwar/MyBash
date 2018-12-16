@@ -2,41 +2,46 @@
 
 clear
 
-echo "Enter your name"
+echo "Enter your name:"
 read yname
-echo "Your name is $yname"
+echo "Your name is: $yname"
 echo
-
-echo "Press Y to continue and N to exit"
+sleep 2
+echo "Press Y to continue or N to exit:"
 read ack
 
 if [ $ack = "Y" ]; then
 #Input result of the command date to a variable so that you can echo it
 DDate=$(date)
-echo "Hello" $yname ". It is " $DDate 
+echo "Hello" $yname ". It is " $DDate
+sleep 1
 echo
 echo "Wondering how I got the date and the text on the same line??"
-echo "Press y to look at my script and n if you don't care"
+sleep 2
+echo "Press Y to look at my script or N if you don't care:"
 read ack
 
-if [ $ack = "y" ]; then
+if [ $ack = "Y" ]; then
 clear
 echo "Hello curious being!! Here you go..."
+sleep 2
 echo
-cat MyBash3
+cat $0
 echo
-echo "Now that's all of my script"
-echo "Do you like it?"
+echo "Now that's all of my script."
+sleep 2
 else
-echo "See ya later"
+echo "See ya later."
 fi
 
 # else part of my first if block
 else
 
-echo "I understand you don't want to continue"
+echo "I understand you don't want to continue."
 fi
 
-#output error message to log file ask user to check log file if the output file$
-
-#echo "Really?? your name has special characters? What planet are you from?"
+echo "\nIn this script, you have learnt the following:"
+sleep 0.5
+echo "1. The syntax to read user input and assign it to variables"
+sleep 0.5
+echo "2. The syntax to assign the output of a command to a variable"
