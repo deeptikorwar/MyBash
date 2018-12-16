@@ -1,26 +1,32 @@
+#!/bin/bash
+
 clear
-echo "Let's try to run a command on each file within a directory"
+echo "Let's try to run a command on each file within a directory."
+sleep 2
 # Let's do it recursively later
 echo
 echo "Type the directory path you are after:"
-echo "Please do not choose a directory path which is the same as this script's path"
+echo "Please do not choose a directory path which is the same as this script's path."
 read dircmd
 echo
-sleep 0.5
+sleep 2
 echo "You have chosen this path" $dircmd
+
 echo
 sleep 0.5
 echo "Now type the command you want to execute on each of these files:"
-echo "Type cat for now as I can't think of others commands that will work"
+echo "Type cat for now as I can't think of others commands that will work."
 read yourcmd
+
 echo
-sleep 0.5
-echo "You have chosen this command" $yourcmd
+sleep 2
+echo "You have chosen this command." $yourcmd
+
 #first find all the files in the chosen directory
 echo
 eval ls $dircmd > MyBash.log
 mycount="$(cat MyBash.log | wc -l)"
-echo "Your directory contains these many items" $mycount
+echo "Your directory contains these many items:" $mycount
 #let's start a loop
 echo
 
@@ -49,3 +55,13 @@ echo "Uh oh!!Looks like you do not have any files in that directory"
 else
 echo "Hey there!! I am done executing your favorite command on all files"
 fi
+
+echo
+sleep 2
+echo "\nIn this script, you have learnt the following:"
+sleep 0.5
+echo "1. The syntax to direct command output to a file"
+sleep 0.5
+echo "2. The wc - l command to count the number of lines in a file"
+sleep 0.5
+echo "3. The pipe (|) operator"
