@@ -1,16 +1,28 @@
 #!/bin/bash
+#Still need to check if an integer is passed to the count variable
 clear
+#My Hello function
 Hello()
 {
 echo $1. $wish
 }
-echo "Let's try some functions in scripts"
-echo "Type the number of times you want to be wished"
-read count
+
+echo "Let's try some functions in scripts."
+echo "Type the number of times you want to be wished."
+while read count
+do
+if [ $count -ge 1 ]; then
+break;
+else
+echo "Please type a number greater than zero."
+fi
+done
+#read count
 echo
-echo "What should I wish you? Good Morning? Guten Morgan? Namaste?"
+echo "Type your favorite wish. For example, Good Morning, Guten Morgan, Hello, or Namaste."
 read wish
 echo
+
 i=1
 while [ $i -le $count ]
 do
@@ -18,3 +30,9 @@ do
 Hello $i
 i=$(( $i + 1 ))
 done
+
+echo "\nIn this script, you have learnt the following:"
+sleep 0.5
+echo "1. The syntax of functions"
+sleep 0.5
+echo "2. The break command"
