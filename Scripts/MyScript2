@@ -1,41 +1,37 @@
 #!/bin/bash
 
-echo "Let's see if we can check whether files or directories exist"
+echo "Let's see if we can check whether files or directories exist."
+sleep 2
+echo "I am creating variables for directory path and file path."
+sleep 1
 
-echo "I am creating variables for directory path and file path"
 dire=~/Documents
 fname=~/Documents/BashExer/MyBash2
+
 echo
-echo "Lemme print them out"
+echo "Lemme print them out."
+sleep 2
 
 echo The directory is $dire
 echo The filename is $fname
 
-echo "I want to check if my 'if' statement works"
-a=10
-b=10
-if [ $a -eq $b ]; then
-echo "If statement works"
-else
-echo "Something is wrong with my if block"
-fi
-
 echo
 
-echo "Now let's see if I can do a dir check"
+echo "Now let's see if I can do a dir check."
+sleep 2
 if [ -d "$dire" ]; then
-echo "Dir exists. My script can see it"
+echo "Dir exists. My script can see it."
 else
-echo "It is'nt"
+echo "Dir doesn't exist."
 fi
 
 echo
-echo "Now moving on to the file check"
+echo "Now moving on to the file check."
+sleep 2
 if [ -f "$fname" ]; then
-echo "Yes!ma file exists"
+echo "Yes!ma file exists."
 else
-echo "Nope! I can't find it"
+echo "Nope! I can't find it."
 fi
 
-echo "Hmm..I wonder if there is a way that user can input the dir path or file path and pass it to the script"
-
+echo "\nIn this script, you have learnt how to check whether files or directories exist."

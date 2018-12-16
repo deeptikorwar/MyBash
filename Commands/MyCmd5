@@ -1,24 +1,29 @@
 #!/bin/bash
 clear
-echo "Let's play with some command line arguments"
+echo "Let's play with some command line arguments."
 echo
-sleep 0.5
+sleep 2
 #start main loop
 if [ $# -eq 0 ]; then
 
-echo "Looks like you did not pass me any arguments"
-echo "Run me again, but with some args please..."
+echo "Looks like you did not pass me any arguments :("
+sleep 2
+echo "Run me again but this time pass some commands as arguments please..."
+sleep 2
 
 else
 
 echo "You passed $# number of args"
-echo "These are the args you passed:"
+sleep 1
+echo "Here are the args you passed:"
+sleep 2
 count=0
 
 for argu in $*
 do
 count=$(( $count + 1 ))
 echo $count. $argu
+sleep 1
 done
 echo
 
@@ -26,22 +31,37 @@ dollar="$"
 cmd="$dollar$count"
 # you need to convert everything to a string to pass it to the eval command
 eval echo "The last argument you passed is:" $cmd
-
+sleep 2
 echo
 echo "Now from this list, type your favorite command"
 read input </dev/tty
 echo "So I take '$input' is your fav?"
 echo
-
-echo "Here are your not so fav commands" 
+sleep 2
+echo "Here are your not so fav commands:"
 for argu in $*
 do
 
 if [ $input != $argu ]; then
 echo $argu
+sleep 1
 fi
 
 done
 
 #end main loop
 fi
+
+echo "In this script, you have learnt the following:"
+sleep 0.5
+echo "1. The syntax of 'if' loop"
+sleep 0.5
+echo "2. The syntax of 'eq' comparision operator"
+sleep 0.5
+echo "2. The syntax to increment a numeric variable"
+sleep 0.5
+echo "3. The syntax to read user input within a loop"
+sleep 0.5
+echo "4. The syntax to nest conditions within a loop"
+sleep 0.5
+echo "5. The syntax of '!=' comparision operator"

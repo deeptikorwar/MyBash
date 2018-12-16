@@ -1,49 +1,85 @@
 clear
-echo "Hey there!! welcome back..let's learn some more commands"
+echo "Hey there!! welcome back...let's learn some more commands."
+sleep 1
 echo
 echo "Instead of navigating to a directory and then listing its contents..."
-echo "you can list the contents from your current working directory"
+sleep 0.5
+echo "...you can list the contents from your current working directory."
+sleep 1
 echo
 ls /home
 echo
-echo "this was done using ls /path"
-echo "In this example, I've used ls/home"
+echo "This was done using ls /path"
+sleep 1
+echo "In this example, I've used ls /home"
 echo
-echo "you can also move directly to the home using cd/home or cd ~"
-echo "~ is the shortcut to your home folder"
+sleep 1
+echo "You can also move directly to the home folder using cd /home or cd ~"
+sleep 1
+echo "~ is the shortcut to your home folder."
+sleep 1
 echo
 cd ~
-echo "let's see if you are in your home directory.."
-echo "now how did we do that in the first script"
+echo "Let's see if you are in your home directory."
+sleep 1
+echo "Now how did we do that in the first script"
+sleep 1
 pwd
 echo
 echo "That's right... you can check using the pwd command"
+sleep 1
 echo
-echo "to move up a folder, use the cd .. command"
-echo 
-echo "first let's go to the documents folder in your home"
+echo "To move up a folder, you can use the cd .. command."
+sleep 1
+echo
+echo "First let's go to the documents folder in your home."
+sleep 1
 cd ~/Documents
-echo "now...where am I"
+echo "Now...where am I?"
+sleep 1
 pwd
 echo
-echo "lets move up again"
+echo "Let's move up again."
+sleep 1
 cd ..
-echo "and where am I now"
+echo "And where am I now???"
+sleep 1
 echo
 pwd
 echo
-echo "voila back again at the home directory"
+echo "Voila! back again at the home directory"
+sleep 1
 echo
-echo "to view the help on a command, use the man command"
-echo "for example, man ls"
+echo "To view the help on a command, use the man command."
+sleep 2
+echo "For example, man ls"
+sleep 2
 echo
-echo "to exit the help, press q"
-echo "I have not executed the man command here as I am not sure how to exit"
+echo "To exit the help, press q"
+sleep 2
+echo "Don't forget to hit q when you have finished reading about the man command."
+sleep 2
+man ls
 echo
-echo "hmmm..I also need to check if there a way to add delays in my script"
-echo "let's create a file using the touch command now"
+echo "Let's create a file using the touch command."
+sleep 2
+echo "\nI am executing touch YourNewFile now."
+sleep 1
 echo
 touch YourNewFile
-echo "check if you can spot the 'YourNewFile' in your home directory using the ls command"
+echo "Check if you can spot the 'YourNewFile' in your home directory using the ls command."
 echo
-echo "Bye! see ya later alligator"
+sleep 1
+echo "In this script, you have learnt the following commands"
+sleep 0.5
+echo "1. ls /path"
+sleep 0.5
+echo "2. cd home or cd ~"
+sleep 0.5
+echo "3. cd .."
+sleep 0.5
+echo "4. man"
+sleep 0.5
+echo "5. touch"
+sleep 0.5
+echo "Bye Bye!"

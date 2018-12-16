@@ -1,45 +1,71 @@
 echo "Let me show you some of the basic commands I've learnt."
+sleep 1
 echo "Before I begin, let me clear your terminal using the clear command."
-
+sleep 2
 clear
 
+sleep 1
 echo "By the way, I am talking to you using the echo command."
+sleep 1
+echo
+echo "Wondering how I've introduced delays in this monologue."
+sleep 1
+echo "Ha ha..that's using the sleep command. Try sleep 1 on your terminal."
 echo "Let's see what directory you are currently in."
 echo
-
+sleep 1
 echo "Well you are in..."
+sleep 1
 pwd
 echo "...this directory"
 echo
-echo "This was done using the pwd command."
+echo "You can find this using the pwd command."
 echo
+sleep 1
 echo "Now let's move to the root directory."
 echo
-echo "This can be acheived by the cd / command..In Linux / means the root directory"
-
+echo "Do this by running the cd / command. In Linux / means the root directory."
+echo
 cd /
-
-echo "Let's see what directory you are in now."
-echo "You are in..."
+sleep 1
+echo "Let's see what directory you are in right now.\nWell, you are in ..."
 
 pwd
-
+sleep 1
 echo
-echo "So are you happy to be in the root directory?"
+echo "So, are you happy to be in the root directory?"
 echo "Let's see what files and directories you've got here."
+sleep 1
 echo
 
 ls
 
 echo
-echo "This was done using the ls command."
+echo "You can find that out using the ls command."
 echo "Not happy with this? Do you want a detailed list?"
 echo
+sleep 1
 
 ls -l
 
 echo
-echo "Now that was done using the ls -l command."
+echo "Now, that was done using the ls -l command."
 echo
-echo "In this script you have learnt the clear, echo, pwd, cd and ls commands."
-echo "See you again in my next script."
+echo "In this script, you have learnt the following commands:"
+sleep 0.5
+echo "1. clear"
+sleep 0.5
+echo "2. echo"
+sleep 0.5
+echo "3. sleep"
+sleep 0.5
+echo "4. pwd"
+sleep 0.5
+echo "5. cd"
+sleep 0.5
+echo "6. ls"
+sleep 0.5
+echo "7. ls -l"
+sleep 0.5
+echo
+echo "See ya later alligator!"

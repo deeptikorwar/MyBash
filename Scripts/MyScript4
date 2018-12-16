@@ -1,30 +1,37 @@
 #!/bin/bash
 clear
 mywvar="y"
-mycount=0
+mycount=0 # counter to hold the number of welcomes
 
 while [ $mywvar = "y" ] 2> MyErrs.txt
 do
   mycount=$(( $mycount + 1 ))
-  echo "Welcome to my bash script"
+  echo "Welcome to my bash script."
   echo
-  sleep 0.5
-  echo "Do you want a welcome again? press y if you do and any other letter if you don't"
+  sleep 1
+  echo "Do you want a welcome again? press y if you do or any other letter if you don't."
   read mywvar 2> MyErrs.txt
 #  cat hello 2> MyErrs.txt
 done
 
+#check if error file has been created
 if [ -s MyErrs.txt ]; then
 
 echo "Looks like you have goofed up!!"
-echo "By any other letter, I mean anything from a to z"
+sleep 1
+echo "Let's see what went wrong."
+sleep 1
 echo
-echo "Here are the error messages"
+echo "Here are the error messages:"
 cat MyErrs.txt
 
 else
 
 echo "Have fun whiling!!"
+sleep 1
 echo "You have been welcomed" $mycount "number of times!"
 
 fi
+
+sleep 2
+echo "\nIn this script, you have learnt how to log errors during command execution."
