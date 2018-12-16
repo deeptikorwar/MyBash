@@ -1,12 +1,18 @@
 #!/bin/bash
 
-echo "What do you like the most"
+echo "What do you like the most:"
 
 echo "1 - Dark choclate"
+sleep 1
 echo "2 - Brownie"
-echo "3 - Ice-cream"
+sleep 1
+echo "3 - Ice cream"
+sleep 1
 echo "4 - Cold coffee"
+sleep 1
+echo
 
+echo "Pick a number from the above list:"
 read like;
 
 case $like in
@@ -15,3 +21,6 @@ case $like in
    3) echo "I love vanilla ice-cream with strawberry sauce and cream";;
    4) echo "Mmm...coffee on the rocks!!!";;
 esac
+
+sleep 2
+echo "\nIn this script, you have learnt the case command."
