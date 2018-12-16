@@ -2,14 +2,15 @@
 
 #This script shows you how to use variables in bash scripts
 clear
-echo "Let's create some variables and use them"
+echo "Let's create some variables and use them."
+sleep 2
 echo
 FNAME="Jason"
 LNAME="Bourne"
 
 echo "I love" $FNAME $LNAME "movies"
+sleep 2
 echo
-echo "Here I have used two variables, FNAME and LNAME"
-echo "Do you think you want to say this 10 times?"
-echo
-echo "I wonder how it is done in bash scripts"
+echo "Here I have used two variables, FNAME and LNAME."
+sleep 1
+echo "In this script, you have learnt how to declare variables and use them."
