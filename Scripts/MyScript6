@@ -1,13 +1,18 @@
-echo "Let's try to create some useful scripts"
-echo
-echo "Type a folder path and then I will list its contents for you"
-read dirpath
-echo "The path you typed is" $dirpath
-echo
-echo "Note that you need to use eval command"
-echo "so that the path is interpreted correctly"
+#!/bin/bash
 
+echo "Let's try something different."
+echo
+echo "Type a folder path and then I will list its contents for you."
+read dirpath
+echo "The path you typed is:" $dirpath
+sleep 2
+echo
+echo "Note that you need to use eval command so that the path is interpreted correctly."
+sleep 2
 eval ls $dirpath
 
+#Find status of previous command and check if there were errors
+
 echo
-echo "See...scripts can be useful too"
+sleep 2
+echo "\nIn this script, you have learnt the eval command."
