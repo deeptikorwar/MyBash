@@ -15,7 +15,7 @@ echo "You have chosen this path" $dircmd
 echo
 sleep 0.5
 echo "Now type the command you want to execute on each of these files:"
-echo "Type cat for now as I can't think of others commands that will work."
+echo "Type cat for now as I can't think of other commands that will work."
 read yourcmd
 
 echo
