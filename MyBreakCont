@@ -1,0 +1,29 @@
+#!/bin/bash
+
+clear
+
+echo "Break statement"
+x=0
+while [ $x -le 5 ];
+do
+
+x=$(( $x + 1 ));
+
+if [ $x == 3 ]; then
+break;
+fi
+echo $x
+done
+
+echo "Continue statement"
+x=0
+while [ $x -le 5 ];
+do
+
+x=$(( $x + 1 ));
+
+if [ $x == 3 ]; then
+continue;
+fi
+echo $x
+done
